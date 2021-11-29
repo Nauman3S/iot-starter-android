@@ -20,7 +20,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+  <a href="https://github.com/Nauman3S/iot-starter-android">
     <img src="images/iot-starter-logo.png" alt="Logo" width="80" height="80">
   </a>
 
