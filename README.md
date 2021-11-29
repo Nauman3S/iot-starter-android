@@ -13,7 +13,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+[![LinkedIan][linkedin-shield]][linkedin-url]
 
 
 
@@ -66,18 +66,18 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](images/scr17.png)
+![NodeRED Dashboard](images/scr17.png)
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+There are a number of IoT Starter Projects out there for you to explore. The purpose of this project is to provide you with an easy to use example of an IoT Project with the latest tech-trends in IoT space. This project doesn't require any hardware and make use of your Android Smartphone accelerometer sensor.
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
+How it works?
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
+This project has 3 parts.
+* An android smartphone app to collect phone accelerometer data and send it to node-red dashboard over MQTT.
+* An MQTT Broker(running on a Ubuntu Server) to receive data from smartphone app and forward it to NodeRED dashboard for visualization.
+* A NodeRED app running on IBM Cloud to visualize the accelerometer data in real-time.
 
-Use the `BLANK_README.md` to get started.
+Once you run this project succesfully, you will be able to implement same set of instructions on your next IoT project.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -85,16 +85,13 @@ Use the `BLANK_README.md` to get started.
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+IoT Starter is built with
 
-* [Next.js](https://nextjs.org/)
-* [React.js](https://reactjs.org/)
-* [Vue.js](https://vuejs.org/)
-* [Angular](https://angular.io/)
-* [Svelte](https://svelte.dev/)
-* [Laravel](https://laravel.com)
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
+* [Android Studio](https://developer.android.com/studio)
+* [NodeRED](https://nodered.org/)
+* [Mosquitto](https://mosquitto.org/)
+* [IBM Cloud](https://www.ibm.com/cloud)
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -103,34 +100,22 @@ This section should list any major frameworks/libraries used to bootstrap your p
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+This section provides a set of instructions on how to run this project.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+This is a list things you need have.
+
+* Android Studio(optional)
+* IBM Cloud Account
 
 ### Installation
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/your_username_/Project-Name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
+1. Compile the andorid app or use APK file and install it on your smartphone.
+2. Make a Classic Ubuntu Server 20.04 instance in your IBM Cloud account and install mosquitto broker on it.
+3. Install NodeRED in your IBM Cloud Account
+4. Install node-red-dashboard in your NodeRED instance.
+5. Import the flow from NodeREDDashboard folder of this repository into your NodeRED dashboard.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -139,9 +124,9 @@ _Below is an example of how you can instruct your audience on installing and set
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+Install the compiled android app on your Android Phone and in settings page put the public IP address of your Ubuntu Server 20.04 instance as a broker address and in the topic you can put ``data/val/accelerometer`` and then on the homepage of the app you can press start to start sending the data to the dashboard.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+You can visulaize the data on the NodeRED dashboard ui page usually at the address ``http://appURL/ui``
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -150,19 +135,11 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
-
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
+- [x] Add Android App
+- [ ] Add iOS App
+- [ ] Add a standalone hardware example.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -185,7 +162,7 @@ Don't forget to give the project a star! Thanks again!
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the Eclipse Public License 1.0 License. See `LICENSE` for more information.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -194,30 +171,11 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+NaumanShakir - [NaumanShakir.com](https://NaumanShakir) - [@Nauman3S](https://twitter.com/Nauman3S) - NaumanShakir3s@gmail.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
-
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
+Project Link: [https://github.com/Nauman3S/iot-starter-android](https://github.com/Nauman3S/iot-starter-android)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
@@ -233,5 +191,5 @@ Use this space to list resources you find helpful and would like to give credit 
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
 [license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/screenshot.png
+[linkedin-url]: linkedin.com/in/naumanshakir3s
+[product-screenshot]: images/scr17.png
