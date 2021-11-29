@@ -180,16 +180,16 @@ Project Link: [https://github.com/Nauman3S/iot-starter-android](https://github.c
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/Nauman3S/iot-starter-android
+[contributors-url]: https://github.com/Nauman3S/iot-starter-android/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/Nauman3S/iot-starter-android
+[forks-url]: https://github.com/Nauman3S/iot-starter-android/network/members
+[stars-shield]: https://img.shields.io/github/stars/Nauman3S/iot-starter-android
+[stars-url]: https://github.com/Nauman3S/iot-starter-android/stargazers
+[issues-shield]: https://img.shields.io/github/issues/Nauman3S/iot-starter-android
+[issues-url]: https://github.com/Nauman3S/iot-starter-android/issues
+[license-shield]: https://img.shields.io/github/license/Nauman3S/iot-starter-android
+[license-url]: https://github.com/Nauman3S/iot-starter-android/blob/main/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: linkedin.com/in/naumanshakir3s
 [product-screenshot]: images/scr17.png
