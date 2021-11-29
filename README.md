@@ -191,5 +191,5 @@ Project Link: [https://github.com/Nauman3S/iot-starter-android](https://github.c
 [license-shield]: https://img.shields.io/github/license/Nauman3S/iot-starter-android
 [license-url]: https://github.com/Nauman3S/iot-starter-android/blob/main/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: linkedin.com/in/naumanshakir3s
+[linkedin-url]: https://linkedin.com/in/naumanshakir3s
 [product-screenshot]: images/scr17.png
