@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
 
     private TextView xVal, yVal, zVal;
-    private Button settings,btnStart, btnStop;
+    private Button settings,btnStart, btnStop, btnAboutUs;
 
     Handler mHandler = new Handler();
 
@@ -68,6 +68,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         settings = findViewById(R.id.btnSettings);
         btnStart = findViewById(R.id.btnStart);
         btnStop =findViewById(R.id.btnStop);
+        btnAboutUs = findViewById((R.id.btnAboutUs));
 
     }
 
@@ -176,4 +177,9 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         startActivity(new Intent(MainActivity.this, MqttSettings.class));
 
     }
+
+    public void handleAboutUs(View v){
+        startActivity(new Intent(MainActivity.this, AboutUs.class));
+    }
+
 }

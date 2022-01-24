@@ -6,7 +6,7 @@ android {
     compileSdk 30
 
     defaultConfig {
-        applicationId "com.example.accelerometer"
+        applicationId "com.threestechlabs.accelerometer"
         minSdk 28
         targetSdk 30
         versionCode 1
